@@ -12,24 +12,24 @@
 			</div>
 		</header>
 		<section>
-			<form action="/books" method="post" novalidate>
+			<form action="/books/<%= books.id %>" method="post" novalidate>
 				<fieldset>
 					<legend>Books Info</legend>
 					<div class="form-group">
 						<label for="title">Title</label>
-						<input type="text" class="form-control" id="book_title" name="title" placeholder="Your Book Title" required>
+						<input type="text" class="form-control" id="book_title" name="title" placeholder="Your Book Title" required value="<%=books.title %>">
 					</div>
 					<div class="form-group">
 						<label for="cover">Cover</label>
-						<input type="text" class="form-control" id="book_cover" name="cover" placeholder="Is you book hardcover or paperback?" required>
+						<input type="text" class="form-control" id="book_cover" name="cover" placeholder="Is you book hardcover or paperback?" required value="<%=books.cover %>">
 					</div>
 					<div class="form-group">
 						<label for="price">Price</label>
-						<input type="Number" class="form-control" id="book_price" name="price" placeholder="What is the price of your book in CAD?" step="0.01" min="0" required>
+						<input type="Number" class="form-control" id="book_price" name="price" placeholder="What is the price of your book in CAD?" step="0.01" min="0" required value="<%=books.price %>">
 					</div>
 				</fieldset>
 				<div class="form-group">
-					<button type="submit" class="btn btn-primary">Create Book</button>
+					<button type="submit" class="btn btn-primary">Update Book</button>
 				</div>
 			</form>
 		</section>
