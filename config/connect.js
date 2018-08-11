@@ -1,4 +1,4 @@
 //Mongo Database Connection
 module.exports = {
-	db:'Add your own database connection if you want to run it locally'
+	db:'mongodb://nathanfry:crabpeople1@ds115758.mlab.com:15758/bookstore200343236'
 }
